@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="age"> 
+    <hr>
+
+    <button onclick="checkage()">Check Age</button>
+    <hr>
+    <p id="para"></p>
+    <script type="text/javascript">
+        function checkage(){
+            var input = document.getElementById("age").value
+            if (input<18){
+                 var para = document.getElementById("para")
+                 para.textContent = "You can not drive in india"
+            }
+            else if (input==18){
+                var para = document.getElementById("para")
+                para.textContent = "Your are just old enough to drive in india"
+            }
+            else{
+                var para = document.getElementById("para")
+                para.textContent = "You can drive in india"
+            }
+
+        }
+
+    </script>
+</body>
+</html>
