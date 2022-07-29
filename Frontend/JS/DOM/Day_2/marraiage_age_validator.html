@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Marriage Age Validator</h1>
+    <hr/>
+    <br/>
+    <label for="Gender">Gender:</label>
+    <select id="select">Gender
+        <option>Male</option>
+        <option>Female</option>
+    </select>
+    <br/>
+    <br/>
+    <label for="birthday">Year Of birth:</label>
+    <input type="number" id="birthday" name="birthday">
+    <br/>
+    <br/>
+    <label for="birthday">Present Year:</label>
+    <input type="number" id="birthdays" name="birthdays">
+
+    <br/>
+    <br/>
+
+    <button onclick="marriage()">Click here to check</button>
+
+    <script type="text/javascript">
+
+        function marriage(){
+           var select = document.getElementById("select").value
+
+        //    var dob = document.getElementById('birthday')
+
+        //    var present = document.getElementById('birthdays')
+            var dob = document.getElementById('birthday').value
+
+            var present = document.getElementById('birthdays').value
+
+            var age = present-dob;
+
+           if(age>18){
+            alert("you are eligible to married")
+           }
+           else{
+            alert("you are not eligible to married")
+           }
+           
+        }
+    </script>
+    
+</body>
+</html>

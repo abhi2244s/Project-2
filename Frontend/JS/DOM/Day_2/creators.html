@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Practise Creators</title>
+    </head>
+    <body>
+        <div id="headings">
+        </div>
+        <div id="cont">
+        </div>
+        <ul id="vikings">
+            <li>Priyanshu</li>
+        </ul>
+        <button onclick="createh1()">Create H1</button>
+        <button onclick="createh2()">Create 2 H3</button>
+        <button onclick="createDivs()">Create DIVS</button>
+        <button onclick="addStudents()">Add Students</button>
+        <button>Add Copyright</button>
+        <script type="text/javascript">
+            var students = ['Ajay','Akshay','Anusha','Chandrashekhara','Haren','Hasaan','Mahesh','Mousumi','Pavan','Rahul','Sumanta','Venkatesh','Vetrival','Vijayendra'];
+             
+
+            function createh1(){
+                var h1 = document.createElement('h1')
+                h1.textContent = "Masai"
+
+                var headings = document.getElementById("headings")
+
+                headings.append(h1)
+            }
+
+            function createh2(){
+
+                var h3 = document.createElement('h3')
+                h3.textContent = "A Transformation in education! "
+
+                var headings = document.getElementById("headings")
+
+                headings.append(h3)
+
+                var h1 = document.createElement('h3')
+                h1.textContent = " Learn to earn, pay when you get "
+
+                var heading = document.getElementById("headings")
+
+                heading.append(h1)
+            }
+
+
+            var content = 0;
+            function createDivs(){
+            
+
+                for(var i =0;i<10;i++){
+
+                    var div = document.createElement('div')
+                    div.textContent = "Content :" + (++content)
+
+                    var head = document.getElementById("cont")
+                    head.append(div)
+
+
+
+                }
+            }
+            
+              
+            
+
+        </script>
+    </body>
+</html>
