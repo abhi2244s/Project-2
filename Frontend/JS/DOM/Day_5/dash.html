@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="user">Hello</h1>
+    <p id="para"></p>
+
+    <button id="logout">Logout</button>
+
+    <script type="text/javascript">
+
+        var username = localStorage.getItem('username')
+
+        var user = document.getElementById('user')
+        user.innerHTML = username
+
+
+
+        var date = new Date 
+
+        var para = document.getElementById('para')
+        para.innerHTML = date
+
+
+        var btn = document.getElementById('logout')
+        btn.addEventListener('click',log)
+
+        function log(){
+            window.location.href="/home/abhishek/Desktop/Frontend/JS/DOM/Day_5/login.html"
+        }
+
+    </script>
+</body>
+</html>
