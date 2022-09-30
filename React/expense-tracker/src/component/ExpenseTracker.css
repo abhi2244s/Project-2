@@ -1,0 +1,39 @@
+.box1{
+    margin-top: 40px;
+    display: flex;
+    border: 1px solid rosybrown;
+    background-color: rosybrown;
+    border-radius: 7px;
+  
+ 
+}
+.expense-date{
+    margin: 20px;
+}
+
+.expense-item{
+    display: flex;
+    margin: 20px;
+    
+}
+h2{
+    margin-left: 50px;
+    color: white;
+}
+h1{
+   text-align: center;
+   color: white;
+
+}
+
+.dollar_price{
+    border: 1px solid blueviolet;
+    color: white;
+    background-color: slateblue;
+    padding: 5px 15px;
+    margin-left: 490px;
+    border-radius: 7px;
+    
+}
+
+
